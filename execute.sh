@@ -14,16 +14,6 @@ fi
 
 cd ./tracks
 
-cd junction
-curl -o submitPod.go https://raw.githubusercontent.com/wcz1997/old/main/submitPod.go
-curl -o verifyPod.go https://raw.githubusercontent.com/wcz1997/old/main/verifyPod.go
-curl -o validateVRF.go https://raw.githubusercontent.com/wcz1997/old/main/validateVRF.go
-cd ..
-cd blocksync
-curl -o blocks.go https://raw.githubusercontent.com/wcz1997/old/main/blocks.go
-curl -o txns.go https://raw.githubusercontent.com/wcz1997/old/main/txns.go
-cd ..
-
 # 获取地址和助记词
 ADDRESS=$(grep -oP '(?<=Address: ).*' wallet_output.txt)
 MNEMONIC=$(grep -oP '(?<=Mnemonic: ).*' wallet_output.txt)
