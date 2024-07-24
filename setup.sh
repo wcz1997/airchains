@@ -33,9 +33,6 @@ sudo apt install -y nodejs
 git clone https://github.com/airchains-network/evm-station.git
 git clone https://github.com/airchains-network/tracks.git
 
-cd tracks
-git checkout tags/v0.0.4
-cd ..
 
 # 执行evm-station的初始设置
 cd evm-station
