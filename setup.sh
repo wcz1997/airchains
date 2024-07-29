@@ -17,7 +17,7 @@ echo $NAME > ~/.track_name
 
 # 安装依赖
 sudo apt-get update
-sudo apt-get install -y jq 
+sudo apt-get install -y jq libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler git screen
 
 # 安装 Go 1.22.3
 wget https://go.dev/dl/go1.22.3.linux-amd64.tar.gz
